@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<style>
+	.custom-outline-umuomaku {
+		color: #99004a;
+		border: 1px solid #99004a;
+		background-color: transparent;
+		transition: all 0.3s ease;
+	}
+
+		.custom-outline-umuomaku:hover {
+			background-color: #99004a;
+			color: white;
+		}
+
+</style>
+
+
+@model Umuomaku.Models.Highlight
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<section class="container my-5">
+    <h2 class="fw-bold text-center general-heading">@Model.Title</h2>
+
+    <div class="text-center mb-4">
+        <img src="@Url.Content(Model.ImageUrl)" class="img-fluid rounded shadow" style="max-height: 400px; object-fit: cover;" />
+    </div>
+
+    <div class="px-3">
+        <p style="text-align: justify;">@Html.Raw(Model.Content)</p>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Back to Home</a>
+    </div>
+</section>
+

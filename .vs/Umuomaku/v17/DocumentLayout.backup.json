@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\c#Projects\\Umuomaku\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\home\\highlightdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\home\\highlightdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\models\\highlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:models\\highlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\umuomaku.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -30,8 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HighlightDetail.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Home\\HighlightDetail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\HighlightDetail.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Home\\HighlightDetail.cshtml",
+              "RelativeToolTip": "Views\\Home\\HighlightDetail.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T23:12:40.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Highlight.cs",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Models\\Highlight.cs",
+              "RelativeDocumentMoniker": "Models\\Highlight.cs",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Models\\Highlight.cs",
+              "RelativeToolTip": "Models\\Highlight.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T23:10:37.044Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -40,31 +74,26 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\c#Projects\\Umuomaku\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAYwC0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T02:21:39.3Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Umuomaku",
+              "DocumentIndex": 5,
+              "Title": "Umuomaku.csproj",
               "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Umuomaku.csproj",
               "RelativeDocumentMoniker": "Umuomaku.csproj",
               "ToolTip": "C:\\c#Projects\\Umuomaku\\Umuomaku.csproj",
               "RelativeToolTip": "Umuomaku.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-22T22:51:53.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T22:51:53.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -72,25 +101,24 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T22:51:07.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T22:51:07.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFwAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-22T22:38:00.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -98,8 +126,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAE0AAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T18:04:21.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T18:04:21.409Z"
             }
           ]
         }
