@@ -1,0 +1,255 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<style>
+	.custom-outline-umuomaku {
+		color: #99004a;
+		border: 1px solid #99004a;
+		background-color: transparent;
+		transition: all 0.3s ease;
+	}
+
+		.custom-outline-umuomaku:hover {
+			background-color: #99004a;
+			color: white;
+		}
+
+</style>
+
+
+<!-- Banner Section -->
+<div class="banner" style="background: url('/images/common/eke-market.JPG') no-repeat center center/cover; height: 350px; position: relative;">
+	<div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+		<div class="text-end me-3">
+			<a href="https://www.google.com/maps/dir/?api=1&destination=5.9662367,7.1589527"
+			   target="_blank"
+			   class="btn btn-sm d-inline-flex align-items-center rounded-pill shadow-sm custom-outline-umuomaku">
+				<i class="bi bi-geo-alt-fill me-2"></i> Get Directions
+			</a>
+		</div>
+
+	</div>
+
+
+	<!-- 🛠️ Overlay Card (Aligned with container) -->
+	<div class="position-absolute" style="bottom: -50px; left: 0; width: 100%;">
+		<div class="container">
+			<div class="bg-success text-white p-3 shadow rounded" style="position: relative; width: 320px; background-color: #99004a !important">
+				<h4 class="mb-2">Umuomaku</h4>
+				<p style="font-family:Monotype Corsiva, Times, Serif;" class="mb-0">Home of good people</p>
+				<!-- Downward Arrow -->
+				<div style="
+					content: '';
+					position: absolute;
+					top: 100%;
+					left: 20px;
+					width: 0;
+					height: 0;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-top: 10px solid #99004a;
+				"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- About Umuomaku Section -->
+	<section class="container py-5 mt-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="card border-1 shadow-sm rounded-4">
+						<div class="card-body p-4">
+							
+						<div class="text-center">
+							<h3 class="mb-4 fw-bold general-heading">About Umuomaku</h3>
+						</div>
+						<p>
+								Umuomaku is a town in Orumba South Local Government Area of Anambra State, Nigeria. There are currently four villages in the town which are <strong>Umunambu</strong>, <strong>Okpobe</strong>, <strong>Umuokpurukpu</strong>, <strong>Umungada</strong> and <strong>Okwu</strong>.
+							</p>
+							<p>
+								The town has four major linked roads and can be accessed through these routes: <strong>Ibughubu Umuchu</strong> on the Umunze–Uga express, <strong>Ezira</strong> on the Ekwulobia–Umunze road, <strong>Enugu Umuonyia</strong>, and from <strong>Amanasa Umuchu</strong>.
+							</p>
+							<p>
+								The market day for the town is <strong>EKE</strong>. People from various locations come to trade their goods and services at the market.
+							</p>
+							<p>
+								The people of Umuomaku value their culture and, most importantly, are known for being warm and welcoming.
+							</p>
+							<div class="text-center">
+								<a href="#" class="btn btn-outline-primary btn-sm rounded-pill">
+									Read More <i class="bi bi-arrow-right ms-1"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="container my-5">
+		<div class="text-center">
+			<h3 class="mb-4 fw-bold general-heading">Umuomaku Highlights</h3>
+		</div>
+		<div class="row g-4">
+			<!-- Card 1 -->
+			<div class="col-md-4 d-flex">
+				<div class="card flex-fill h-100">
+					<img src="~/images/gallery/Livinus-Ezenwa-certified-by-Governor.jpg" class="card-img-top" style="height: 370px; object-fit: cover;" alt="Igwe Elect Certification">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Our new Igwe-Elect, Chief Livinus Ezenwa gets certified by Governor Chukwuma Soludo</h5>
+						<div class="mt-auto">
+							<a href="#" class="btn btn-outline-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="col-md-4 d-flex">
+				<div class="card flex-fill h-100">
+					<img src="~/images/gallery/PgAndExcos.jpg" class="card-img-top" style="height: 370px; object-fit: cover;" alt="New PG and Excos">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Umuomaku gets new President General</h5>
+						<div class="mt-auto">
+							<a href="#" class="btn btn-outline-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="col-md-4 d-flex">
+				<div class="card flex-fill h-100">
+					<img src="~/images/gallery/RoadConstruction.jpg" class="card-img-top" style="height: 370px; object-fit: cover;" alt="Road Construction">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Proposed Ezira-Umuomaku-Enugu Umuonyia - Achina road construction project begins</h5>
+						<div class="mt-auto">
+							<a href="#" class="btn btn-outline-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Explore Umuomaku Life -->
+	<section class="container my-5">
+		<div class="text-center">
+			<h3 class="mb-4 fw-bold general-heading">Explore Umuomaku Life</h3>
+		</div>
+		<div class="row g-4">
+			<!-- Event -->
+			<div class="col-md-4">
+				<div class="card bg-dark text-white border-0 shadow-sm overflow-hidden">
+					<img src="~/images/gallery/Umuomaku-tournament.jpg" class="card-img" alt="Umuomaku Tournament 2022" style="height: 250px; object-fit: cover;">
+					<div class="card-img-overlay d-flex flex-column justify-content-end align-items-center bg-dark bg-opacity-50">
+						<a href="#" class="btn btn-light btn-sm w-50 fw-semibold">Event</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Church -->
+			<div class="col-md-4">
+				<div class="card bg-dark text-white border-0 shadow-sm overflow-hidden">
+					<img src="~/images/gallery/stJohnCatholic.jpg" class="card-img" alt="St. John Catholic Church" style="height: 250px; object-fit: cover;">
+					<div class="card-img-overlay d-flex flex-column justify-content-end align-items-center bg-dark bg-opacity-50">
+						<a href="#" class="btn btn-light btn-sm w-50 fw-semibold">Church</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Gallery -->
+			<div class="col-md-4">
+				<div class="card bg-dark text-white border-0 shadow-sm overflow-hidden">
+					<img src="~/images/gallery/masqueredplusman.jpg" class="card-img" alt="Umuomaku Gallery" style="height: 250px; object-fit: cover;">
+					<div class="card-img-overlay d-flex flex-column justify-content-end align-items-center bg-dark bg-opacity-50">
+						<a href="#" class="btn btn-light btn-sm w-50 fw-semibold">Gallery</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container my-5">
+		<div class="text-center">
+			<h3 class="mb-4 fw-bold general-heading">Stories from the Heart of Umuomaku</h3>
+		</div>
+		<div class="row g-4">
+			<!-- Card 1 -->
+			<div class="col-md-4">
+				<div class="card h-100 border-0 shadow-sm">
+					<img src="~/images/gallery/president-general-3-year.jpg" class="card-img-top" alt="President General 3 Years Celebration" style="height: 250px; object-fit: cover;">
+					<div class="card-body text-center">
+						<a href="#" class="stretched-link text-decoration-none fw-semibold fs-6 text-dark">
+							Mr Augustine Chukwuekezie celebrates 3 years in office
+						</a>
+					</div>
+				</div>
+			</div>
+			
+
+			<!-- Card 2 -->
+			<div class="col-md-4">
+				<div class="card h-100 border-0 shadow-sm">
+					<img src="~/images/gallery/Solar-installation.jpg" class="card-img-top" alt="Solar Energy in Eke Umuomaku" style="height: 250px; object-fit: cover;">
+					<div class="card-body text-center">
+						<a href="#" class="stretched-link text-decoration-none fw-semibold fs-6 text-dark">
+							Eke Umuomaku gets powered with Solar Energy
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="col-md-4">
+				<div class="card h-100 border-0 shadow-sm">
+					<img src="~/images/gallery/PalmFruitProcessingMachine.jpg" class="card-img-top" alt="Umuomaku Farm Produce" style="height: 250px; object-fit: cover;">
+					<div class="card-body text-center">
+						<a href="#" class="stretched-link text-decoration-none fw-semibold fs-6 text-dark">
+							Exploring Umuomaku Farm Produce
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container mt-5 px-4 pb-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<div class="card shadow-lg border-0">
+					<div class="card-body">
+						<h4 class="card-title text-center mb-3">
+							<i class="bi bi-geo-alt-fill text-success me-2"></i>Visit Umuomaku Town
+						</h4>
+
+						<!-- Google Map Embed -->
+						<div class="ratio ratio-16x9 mb-3 rounded border">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1402.9712408303333!2d7.159362321276047!3d5.9669047480287984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x10430b97b65cd697%3A0xe47f7e0d19a4ba32!2sX585%2BFHW%20St%20Johns%20catholic%20Church%20Umuomaku%2C%20Okpulukpu%20423108%2C%20Anambra%2C%20Nigeria!3m2!1d5.9662367!2d7.1589526999999995!5e0!3m2!1sen!2suk!4v1753226873776!5m2!1sen!2suk"
+									width="100%"
+									height="450"
+									style="border:0;"
+									allowfullscreen=""
+									loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</div>
+
+						<!-- Location Info -->
+						<div class="text-center">
+							<p class="mb-1">
+								<strong>Location:</strong> St. John's Catholic Church, Umuomaku, Okpulukpu 423108, Anambra, Nigeria
+							</p>
+							<a href="https://www.google.com/maps/dir/?api=1&destination=5.9662367,7.1589527"
+							   target="_blank"
+							   class="btn btn-outline-success mt-3">
+								<i class="bi bi-compass me-1"></i> Get Directions on Google Maps
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
