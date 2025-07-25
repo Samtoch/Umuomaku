@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "_Layout"; // Use your shared layout, or set to null if custom layout is preferred
+}
+
+<div class="container mt-4">
+    <h2 class="fw-bold mb-4 text-center text-primary">Welcome to Umuomaku Admin Dashboard</h2>
+
+    <div class="row g-4">
+
+        <!-- Highlights Card -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-bullhorn fa-2x text-success mb-3"></i>
+                    <h5 class="card-title fw-semibold">Umuomaku Highlights</h5>
+                    <p class="card-text">Add or update key highlights about Umuomaku community activities.</p>
+                    <a href="@Url.Action("Highlights", "Admin")" class="btn btn-outline-success btn-sm">Manage Highlights</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Card -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-calendar-alt fa-2x text-warning mb-3"></i>
+                    <h5 class="card-title fw-semibold">Upcoming Events</h5>
+                    <p class="card-text">Track and manage Umuomaku events, cultural festivals, and public gatherings.</p>
+                    <a href="#" class="btn btn-outline-warning btn-sm">View Events</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Card -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-images fa-2x text-info mb-3"></i>
+                    <h5 class="card-title fw-semibold">Photo Gallery</h5>
+                    <p class="card-text">Upload and organize event photos and cultural images for display on the website.</p>
+                    <a href="#" class="btn btn-outline-info btn-sm">Manage Gallery</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Management (optional) -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-users-cog fa-2x text-danger mb-3"></i>
+                    <h5 class="card-title fw-semibold">User Management</h5>
+                    <p class="card-text">Manage admin users, roles, and access controls.</p>
+                    <a href="#" class="btn btn-outline-danger btn-sm">Manage Users</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Site Overview -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-chart-bar fa-2x text-primary mb-3"></i>
+                    <h5 class="card-title fw-semibold">Site Overview</h5>
+                    <p class="card-text">Overview of published content, total highlights, and latest updates.</p>
+                    <a href="#" class="btn btn-outline-primary btn-sm">View Overview</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+        <p class="text-muted small">Logged in as Administrator</p>
+    </div>
+</div>

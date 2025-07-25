@@ -1,4 +1,4 @@
-namespace Umuomaku.Models
+namespace Umuomaku.Data.Models
 {
     public class ErrorViewModel
     {

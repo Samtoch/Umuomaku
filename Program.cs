@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Umuomaku.Data;
+using Umuomaku.Repositories;
+
+
 namespace Umuomaku
 {
     public class Program
@@ -17,6 +22,10 @@ namespace Umuomaku
                 builder.Services.AddRazorPages(); // No runtime compilation in production
                 builder.Services.AddControllersWithViews();
             }
+
+            builder.Services.AddDbContext<UmuomakuDbContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 18))));
+
+            builder.Services.AddScoped<IHighlightRepo, HighlightRepo>();
 
             var app = builder.Build();
 

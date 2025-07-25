@@ -28,6 +28,30 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/c\#Projects/Umuomaku/Views/Admin/CreateHighlights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlSGlnaGxpZ2h0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/c\#Projects/Umuomaku/Views/Admin/DeleteHighlights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlSGlnaGxpZ2h0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/c\#Projects/Umuomaku/Views/Admin/Highlights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGlnaGxpZ2h0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/c\#Projects/Umuomaku/Views/Admin/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/c\#Projects/Umuomaku/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/c\#Projects/Umuomaku/Views/Admin/UpdateHighlights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlSGlnaGxpZ2h0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/c\#Projects/Umuomaku/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,6 +84,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/c\#Projects/Umuomaku/Views/Home/OurHighlight.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPdXJIaWdobGlnaHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/c\#Projects/Umuomaku/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -83,3 +111,7 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/c\#Projects/Umuomaku/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-rttznskkxf
+
+[C:/c\#Projects/Umuomaku/Views/Shared/_MetaHead.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZXRhSGVhZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-jtc6xh1uin

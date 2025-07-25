@@ -1,0 +1,91 @@
+﻿@model Umuomaku.Data.Models.LoginViewModel
+@{
+    Layout = null; // No layout, stand-alone page
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @await Html.PartialAsync("_MetaHead")
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-lg-4 col-sm-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 align-content-center">
+
+                        <div class="text-center mb-4">
+                            <a asp-controller="Home" asp-action="Index">
+                                <img src="~/images/logos/Umuomaku.png" alt="Logo" style="width: 80px; height: 80px; border-radius: 10px;">
+                            </a>
+                            <h4 class="mt-2 text-success">Admin Login</h4>
+                        </div>
+
+                        <div id="loginError" class="text-danger fw-semibold mb-3 text-center">
+                            @ViewBag.Error
+                        </div>
+
+                        <form method="post" asp-action="Login" asp-controller="Admin" id="loginForm">
+                            <div class="mb-3">
+                                <label asp-for="Email" class="form-label">Email</label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Password" class="form-label">Password</label>
+                                <input asp-for="Password" class="form-control" type="password" />
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+
+                            <div id="loginError" class="alert alert-danger d-none py-2 px-3 small text-center"></div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-sign-in-alt me-1"></i> Login
+                                </button>
+                            </div>
+
+                            <div class="text-center mt-5">
+                                <a class="btn btn-outline-success" asp-controller="Home" asp-action="Index">
+                                    Return to landing page
+                                </a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for innerHTML error -->
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (e) {
+            const email = document.querySelector("[name='Email']").value.trim();
+            const password = document.querySelector("[name='Password']").value.trim();
+
+            if (!email || !password) {
+                e.preventDefault();
+                const errorDiv = document.getElementById("loginError");
+                errorDiv.textContent = "Please enter both Email and Password.";
+                errorDiv.classList.remove("d-none");
+            }
+        });
+
+        // Optional: Show server error passed via TempData
+        @if (TempData["LoginError"] != null)
+        {
+                <text>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const errorDiv = document.getElementById("loginError");
+                    errorDiv.textContent = "@TempData["LoginError"]";
+                    errorDiv.classList.remove("d-none");
+                });
+                </text>
+        }
+    </script>
+
+</body>
+</html>

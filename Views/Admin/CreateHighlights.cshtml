@@ -1,0 +1,64 @@
+﻿@model Umuomaku.Data.Models.Highlight
+
+@{
+    ViewData["Title"] = "Create Highlight";
+}
+
+@* <partial name="_MetaHead" />
+ *@
+<div class="container mt-5">
+    <h3 class="text-center mb-4">Create Highlight</h3>
+
+    <div id="successAlert" class="alert alert-success d-none" role="alert"></div>
+
+    <form asp-action="CreateHighlights" asp-controller="Admin" enctype="multipart/form-data" method="post" onsubmit="return validateHighlightForm()">
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label fw-bold"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Highlight Image</label>
+            <input type="file" name="ImageFile" class="form-control" />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Content" class="form-label fw-bold"></label>
+            <textarea asp-for="Content" class="form-control" rows="6"></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Create Highlight</button>
+    </form>
+</div>
+
+<br />
+<br />
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function validateHighlightForm() {
+            const title = document.querySelector('input[name="Title"]').value.trim();
+            const content = document.querySelector('textarea[name="Content"]').value.trim();
+            const image = document.querySelector('input[name="ImageFile"]').value;
+
+            if (!title || !content || !image) {
+                alert("All fields are required including the image upload.");
+                return false;
+            }
+
+            return true;
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            const alertBox = document.getElementById('successAlert');
+            alertBox.textContent = 'Highlight created successfully!';
+            alertBox.classList.remove('d-none');
+        }
+    </script>
+}

@@ -1,4 +1,7 @@
-﻿@{
+﻿@model List<Umuomaku.Data.Models.Highlight>
+
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -88,51 +91,29 @@
 			</div>
 	</section>
 
+
 	<section class="container my-5">
 		<div class="text-center">
 			<h3 class="mb-4 fw-bold general-heading">Umuomaku Highlights</h3>
 		</div>
 		<div class="row g-4">
-			<!-- Card 1 -->
-			<div class="col-md-4 d-flex">
-				<div class="card flex-fill h-100">
-					<img src="~/images/gallery/Livinus-Ezenwa-certified-by-Governor.jpg" class="card-img-top" style="height: 370px; object-fit: cover;" alt="Igwe Elect Certification">
-					<div class="card-body d-flex flex-column">
-						<h5 class="card-title">Our new Igwe-Elect, Chief Livinus Ezenwa gets certified by Governor Chukwuma Soludo</h5>
-						<div class="mt-auto">
-							<a href="@Url.Action("Highlights", "Home", new { id = 1 })" class="btn btn-outline-primary">Read More</a>
+			@foreach (var item in Model)
+			{
+				<div class="col-md-4 d-flex">
+					<div class="card flex-fill h-100 shadow-sm">
+						<img src="~/uploads/@item.ImageUrl" class="card-img-top" style="height: 370px; object-fit: cover;" alt="@item.Title">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">@item.Title</h5>
+							<div class="mt-auto">
+								<a href="@Url.Action("Highlights", "Home", new { id = item.Id })" class="btn btn-outline-primary">Read More</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<!-- Card 2 -->
-			<div class="col-md-4 d-flex">
-				<div class="card flex-fill h-100">
-					<img src="~/images/gallery/PgAndExcos.jpg" class="card-img-top" style="height: 370px; object-fit: cover;" alt="New PG and Excos">
-					<div class="card-body d-flex flex-column">
-						<h5 class="card-title">Umuomaku gets new President General</h5>
-						<div class="mt-auto">
-							<a href="@Url.Action("Highlights", "Home", new { id = 2 })" class="btn btn-outline-primary">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Card 3 -->
-			<div class="col-md-4 d-flex">
-				<div class="card flex-fill h-100">
-					<img src="~/images/gallery/RoadConstruction.jpg" class="card-img-top" style="height: 370px; object-fit: cover;" alt="Road Construction">
-					<div class="card-body d-flex flex-column">
-						<h5 class="card-title">Proposed Ezira-Umuomaku-Enugu Umuonyia - Achina road construction project begins</h5>
-						<div class="mt-auto">
-							<a href="@Url.Action("Highlights", "Home", new { id = 3 })" class="btn btn-outline-primary">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			}
 		</div>
 	</section>
+
 
 	<!-- Explore Umuomaku Life -->
 	<section class="container my-5">
