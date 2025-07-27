@@ -1,0 +1,29 @@
+﻿@model Umuomaku.Data.Models.Event
+
+@{
+    ViewData["Title"] = "Delete Event";
+}
+
+<div class="container mt-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-light p-2 ">
+            <li class="breadcrumb-item"> <a asp-controller="Admin" asp-action="Home" class="text-decoration-none"> Dashboard </a> </li>
+            <li class="breadcrumb-item active" aria-current="page"> Delete Event </li>
+        </ol>
+    </nav>
+    <form asp-action="DeleteEventById" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <img src="~/uploads/@Model.ImageUrl" class="img-thumbnail mb-3" style="width: 60px; height: 60px; object-fit: cover;" alt="Highlight Image">
+        <p><strong>Title:</strong> @Model.Title</p>
+        <p><strong>Date of Event:</strong> @Model.DateOfEvent</p>
+        <p><strong>Location:</strong> @Model.Location</p>
+        <p><strong>Content:</strong> @Model.Content</p>
+
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Events" class="btn btn-secondary ms-2">Cancel</a>
+    </form>
+</div>
+
+<br />
+<br />

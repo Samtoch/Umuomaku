@@ -6,12 +6,12 @@ using Umuomaku.Data.Models;
 
 namespace Umuomaku.Repositories
 {
-    public class HighlightRepo : IHighlightRepo
+    public class AdminRepo : IAdminRepo
     {
         private readonly UmuomakuDbContext _context;
         private static readonly Logger log = LogManager.GetCurrentClassLogger();
 
-        public HighlightRepo(UmuomakuDbContext context)
+        public AdminRepo(UmuomakuDbContext context)
         {
             _context = context;
         }
@@ -40,15 +40,37 @@ namespace Umuomaku.Repositories
                 log.Error("Error with AddHighlightAsync. " + ex);
             }
         }
+        public async Task AddEventAsync(Event ev)
+        {
+            try
+            {
+                _context.Events.Add(ev);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                log.Error("Error with AddEventAsync. " + ex);
+            }
+        }
 
         public async Task<List<Highlight>> GetAllHighlightAsync()
         {
             return await _context.Highlights.Where(h => !h.IsDeleted).ToListAsync();
         }
 
+        public async Task<List<Event>> GetAllEventsAsync()
+        {
+            return await _context.Events.Where(e => !e.IsDeleted).ToListAsync();
+        }
+
         public async Task<List<Highlight>> GetTopHighlightsAsync()
         {
             return await _context.Highlights.OrderByDescending(h => h.DateCreated).ToListAsync();
+        }
+
+        public async Task<List<Event>> GetTopEventsAsync()
+        {
+            return await _context.Events.OrderByDescending(e => e.DateOfEvent).ToListAsync();
         }
 
         public async Task<List<Highlight>> GetTopHighlightsAsync(int count)
@@ -59,10 +81,23 @@ namespace Umuomaku.Repositories
                 .ToListAsync();
         }
 
+        public async Task<List<Event>> GetTopEventsAsync(int count)
+        {
+            return await _context.Events
+                .OrderByDescending(e => e.DateCreated)
+                .Take(count)
+                .ToListAsync();
+        }
+
 
         public async Task<Highlight?> GetHighlightByIdAsync(int id)
         {
             return await _context.Highlights.FindAsync(id);
+        }
+
+        public async Task<Event?> GetEventByIdAsync(int id)
+        {
+            return await _context.Events.FindAsync(id);
         }
 
         public async Task UpdateHighlightAsync(Highlight highlight)
@@ -75,6 +110,19 @@ namespace Umuomaku.Repositories
             catch (Exception ex)
             {
                 log.Error("Error with UpdateHighlightAsync. " + ex);
+            }
+        }
+
+        public async Task UpdateEventAsync(Event ev)
+        {
+            try
+            {
+                _context.Events.Update(ev);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                log.Error("Error with UpdateEventAsync. " + ex);
             }
         }
 
@@ -92,6 +140,23 @@ namespace Umuomaku.Repositories
             catch (Exception ex)
             {
                 log.Error("Error with SoftDeleteHighlightAsync. " + ex);
+            }
+        }
+
+        public async Task SoftDeleteEventAsync(int id)
+        {
+            try
+            {
+                var ev = await GetEventByIdAsync(id);
+                if (ev != null)
+                {
+                    ev.IsDeleted = true;
+                    await _context.SaveChangesAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                log.Error("Error with SoftDeleteEventAsync. " + ex);
             }
         }
     }

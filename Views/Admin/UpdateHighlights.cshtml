@@ -7,13 +7,35 @@
 <partial name="_MetaHead" />
 
 <div class="container mt-5">
-    <h3 class="text-center mb-4">Update Highlight</h3>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-light p-2 ">
+            <li class="breadcrumb-item"> <a asp-controller="Admin" asp-action="Home" class="text-decoration-none"> Dashboard </a> </li>
+            <li class="breadcrumb-item active" aria-current="page"> Update Highlight </li>
+        </ol>
+    </nav>
 
-    <div id="successAlert" class="alert alert-success d-none" role="alert"></div>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
 
-    <form asp-action="UpdateHighlights" asp-controller="Admin" enctype="multipart/form-data" method="post" onsubmit="return validateHighlightForm()">
+    <form id="handleFormSubmission" asp-action="UpdateHighlights" asp-controller="Admin" enctype="multipart/form-data" method="post" onsubmit="return validateHighlightForm()">
         <input type="hidden" asp-for="Id" />
-        
+        <input type="hidden" asp-for="ImageUrl" />
+        <input type="hidden" asp-for="DateCreated" />
+        <input type="hidden" asp-for="UserCreated" />
+        <input type="hidden" asp-for="IsDeleted" />
+
         <div class="mb-3">
             <label asp-for="Title" class="form-label fw-bold"></label>
             <input asp-for="Title" class="form-control" />
@@ -44,7 +66,6 @@
 <br />
 <br />
 
-
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script>
@@ -52,19 +73,33 @@
             const title = document.querySelector('input[name="Title"]').value.trim();
             const content = document.querySelector('textarea[name="Content"]').value.trim();
 
-            if (!title || !content) {
-                alert("Title and Content are required.");
+            if (!title) {
+                alert("Title is required.");
+                return false;
+            }
+           
+            if (!content) {
+                alert("Content is required.");
                 return false;
             }
 
             return true;
         }
 
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('success') === 'true') {
-            const alertBox = document.getElementById('successAlert');
-            alertBox.textContent = 'Highlight updated successfully!';
-            alertBox.classList.remove('d-none');
+        function handleFormSubmission() {
+            if (validateHighlightForm()) {
+                const submitButton = document.getElementById('submitButton');
+                const spinner = submitButton.querySelector('.spinner-border');
+                const buttonText = submitButton.querySelector('.button-text');
+
+                // Show spinner, change text, disable button
+                spinner.classList.remove('d-none');
+                buttonText.textContent = 'Updating...';
+                submitButton.disabled = true;
+
+                return true; // Allow form submission to proceed
+            }
+            return false; // Prevent form submission if validation fails
         }
     </script>
 }

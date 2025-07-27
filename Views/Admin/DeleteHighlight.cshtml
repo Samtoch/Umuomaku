@@ -8,11 +8,11 @@
     <h2 class="text-center mb-4">Delete Highlight</h2>
     <div class="alert alert-warning">Are you sure you want to delete this highlight?</div>
 
-    <form asp-action="DeleteHighlights" method="post">
+    <form asp-action="DeleteHighlightById" method="post">
         <input type="hidden" asp-for="Id" />
-
+        <img src="~/uploads/@Model.ImageUrl" class="img-thumbnail mb-3" style="width: 60px; height: 60px; object-fit: cover;" alt="Highlight Image">
         <p><strong>Title:</strong> @Model.Title</p>
-        <p><strong>Image URL:</strong> @Model.ImageUrl</p>
+        <p><strong>Date Posted:</strong> @Model.DateCreated</p>
         <p><strong>Content:</strong> @Model.Content</p>
 
         <button type="submit" class="btn btn-danger">Delete</button>

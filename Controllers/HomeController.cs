@@ -12,8 +12,8 @@ namespace Umuomaku.Controllers
         private static readonly Logger log = LogManager.GetCurrentClassLogger();
 
         private readonly ILogger<HomeController> _logger;
-        private readonly IHighlightRepo _repo;
-        public HomeController(ILogger<HomeController> logger, IHighlightRepo repo)
+        private readonly IAdminRepo _repo;
+        public HomeController(ILogger<HomeController> logger, IAdminRepo repo)
         {
             _repo = repo;
             _logger = logger;
@@ -39,8 +39,14 @@ namespace Umuomaku.Controllers
 
         public async Task<IActionResult> OurHighlight()
         {
-            var topHighlights = await _repo.GetTopHighlightsAsync(); // Fetch top 3 by date
-            return View(topHighlights); // Pass to your view
+            var topHighlights = await _repo.GetTopHighlightsAsync(); 
+            return View(topHighlights);
+        }
+
+        public async Task<IActionResult> OurEvents()
+        {
+            var topHighlights = await _repo.GetTopHighlightsAsync(); 
+            return View(topHighlights); 
         }
 
 

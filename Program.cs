@@ -25,7 +25,7 @@ namespace Umuomaku
 
             builder.Services.AddDbContext<UmuomakuDbContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 18))));
 
-            builder.Services.AddScoped<IHighlightRepo, HighlightRepo>();
+            builder.Services.AddScoped<IAdminRepo, AdminRepo>();
 
             var app = builder.Build();
 

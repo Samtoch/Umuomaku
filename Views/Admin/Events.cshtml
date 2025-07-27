@@ -1,7 +1,7 @@
-﻿@model IEnumerable<Umuomaku.Data.Models.Highlight>
+﻿@model IEnumerable<Umuomaku.Data.Models.Event>
 
 @{
-    ViewData["Title"] = "All Highlights";
+    ViewData["Title"] = "All Events";
 }
 
 <div class="container mt-5">
@@ -9,25 +9,43 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-light p-2 ">
             <li class="breadcrumb-item"> <a asp-controller="Admin" asp-action="Home" class="text-decoration-none"> Dashboard </a> </li>
-            <li class="breadcrumb-item active" aria-current="page"> View Highlights </li>
+            <li class="breadcrumb-item active" aria-current="page"> View Event </li>
         </ol>
     </nav>
 
     <div class="d-flex justify-content-end align-items-center mb-4">
-        <a asp-action="CreateHighlights" class="btn btn-success">
-            <i class="bi bi-plus-circle me-1"></i> Add New Highlight
+        
+        <a asp-action="CreateEvent" class="btn btn-success">
+            <i class="bi bi-plus-circle me-1"></i> Add New Event
         </a>
     </div>
 
+    @if (TempData["DeleteEventResponse"] == "Event deleted successfully")
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["DeleteEventResponse"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["DeleteEventResponse"] == "Something went wrong. Delete Failed")
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["DeleteEventResponse"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+
     <div class="table-responsive rounded shadow-sm">
-        <table id="Highlights" class="table table-striped table-bordered table-hover align-middle">
+        <table id="Events" class="table table-striped table-bordered table-hover align-middle">
             <thead class="table-dark text-nowrap">
                 <tr>
-                    <th scope="col">Image</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Content</th>
-                    <th scope="col">Post Date</th>
-                    <th scope="col">Actions</th>
+                    <th data-priority="1" scope="col">Image</th>
+                    <th data-priority="2" scope="col">Title</th>
+                    <th data-priority="3" scope="col">Event Date</th>
+                    <th data-priority="5" scope="col">Location</th>
+                    <th data-priority="6" scope="col">Content</th>
+                    <th data-priority="4" scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -35,21 +53,23 @@
                 {
                     <tr>
                         <td class="text-center">
-                            <img src="~/uploads/@item.ImageUrl" class="img-thumbnail" style="width: 60px; height: 60px; object-fit: cover;" alt="Highlight Image">
+                            <img src="~/uploads/@item.ImageUrl" class="img-thumbnail" style="width: 60px; height: 60px; object-fit: cover;" alt="Event Image">
                         </td>
                         <td class="fw-semibold">@item.Title</td>
+                        <td class="fw-semibold">@item.DateOfEvent</td>
+                        <td class="fw-semibold">@item.Location</td>
                         <td>
                             <span title="@item.Content">
                                 @(item.Content.Length > 100 ? item.Content.Substring(0, 100) + "..." : item.Content)
                             </span>
                         </td>
-                        <td class="fw-semibold">@item.DateCreated</td>
+                        
                         <td>
                             <div class="d-flex gap-2">
-                                <a asp-action="UpdateHighlights" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary" title="Edit">
+                                <a asp-action="UpdateEvent" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary" title="Edit">
                                     <i class="bi bi-pencil-square"></i>
                                 </a>
-                                <a asp-action="DeleteHighlights" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger" title="Delete">
+                                <a asp-action="DeleteEvent" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger" title="Delete">
                                     <i class="bi bi-trash"></i>
                                 </a>
                             </div>
@@ -67,14 +87,14 @@
 @section Scripts {
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#Highlights').DataTable({
+            $('#Events').DataTable({
                 responsive: true,
                 autoWidth: false,
                 paging: true,
                 searching: true,
                 ordering: true,
                 info: true,
-                order: [[3, 'desc']], // Order by datetime created desc
+                order: [[2, 'desc']], // Order by datetime created desc
                 language: {
                     search: "",
                     searchPlaceholder: "Search highlights..."
@@ -85,7 +105,7 @@
                     "<'row'<'col-sm-12'tr>>" + // Table
                     "<'row mt-3'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7 text-end'p>>" // Bottom controls: info + pagination
             });
-
+       
             // Optional: improve the search input appearance
             $('.dataTables_filter input').addClass('form-control form-control-sm d-inline-block').css('width', '250px');
         });
