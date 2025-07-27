@@ -90,6 +90,8 @@ wwwroot\uploads\4bfb9202-1284-46c7-9cb6-875ffe19349a.jpg
 wwwroot\uploads\e1fbc8a0-353d-4dc9-ba12-95426c4c23a2.jpg
 wwwroot\uploads\IMG-EVENT-25072714183915.png
 wwwroot\uploads\IMG-EVENT-25072716353679.png
+wwwroot\uploads\IMG-HIGHLIGHT-25072717462727.png
+wwwroot\uploads\IMG-HIGHLIGHT-25072717464053.png
 wwwroot\uploads\IMG25072515502496.png
 wwwroot\uploads\IMG25072515514320.png
 wwwroot\uploads\IMG25072516355459.png

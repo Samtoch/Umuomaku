@@ -11,17 +11,20 @@ namespace Umuomaku
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            if (builder.Environment.IsDevelopment())
-            {
-                builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
-                builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
-            }
-            else
-            {
-                builder.Services.AddRazorPages(); // No runtime compilation in production
-                builder.Services.AddControllersWithViews();
-            }
+            //// Add services to the container.
+            //if (builder.Environment.IsDevelopment())
+            //{
+            //    builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+            //    builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            //}
+            //else
+            //{
+            //    builder.Services.AddRazorPages(); // No runtime compilation in production
+            //    builder.Services.AddControllersWithViews();
+            //}
+
+            builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+            builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
             builder.Services.AddDbContext<UmuomakuDbContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 18))));
 
@@ -33,6 +36,10 @@ namespace Umuomaku
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
+            }
+            else
+            {
+                app.UseDeveloperExceptionPage(); 
             }
             app.UseStaticFiles();
 

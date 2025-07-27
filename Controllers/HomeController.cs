@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
 using System.Diagnostics;
@@ -30,7 +31,13 @@ namespace Umuomaku.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Highlights(int id)
+        public async Task<IActionResult> Highlights()
+        {
+            var topHighlights = await _repo.GetTopHighlightsAsync();
+            return View(topHighlights);
+        }
+
+        public async Task<IActionResult> HighlightDetail(int id)
         {
             var highlight = await _repo.GetHighlightByIdAsync(id);
             if (highlight == null) return NotFound();
@@ -49,15 +56,10 @@ namespace Umuomaku.Controllers
             return View(topHighlights); 
         }
 
-
-        public IActionResult HighlightDetail()
+        public async Task<IActionResult> Events()
         {
-            return View();
-        }
-
-        public IActionResult Events()
-        {
-            return View();
+            var topHighlights = await _repo.GetTopEventsAsync();
+            return View(topHighlights);
         }
 
         public IActionResult History()
@@ -80,10 +82,30 @@ namespace Umuomaku.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [Route("Home/Error")]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            try
+            {
+                var feature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
+                if (feature != null)
+                {
+                    log.Error("Unhandled error at " + feature.Error + " feature.Path: " + feature.Path);
+                    //_logger.LogError(feature.Error, $"Unhandled error at {feature.Path}");
+                }
+
+                var model = new ErrorViewModel
+                {
+                    RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+                };
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                log.Error("Error with Application. " + ex);
+            }
+
+            return View();
         }
     }
 }

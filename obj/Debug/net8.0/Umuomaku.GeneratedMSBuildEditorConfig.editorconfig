@@ -76,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0dXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/c\#Projects/Umuomaku/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/c\#Projects/Umuomaku/Views/Home/EventDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
