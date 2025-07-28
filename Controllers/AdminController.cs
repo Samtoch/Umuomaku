@@ -72,6 +72,12 @@ namespace Umuomaku.Controllers
             return View(ev);
         }
 
+        public async Task<IActionResult> Gallery()
+        {
+            var galleries = await _repo.GetAllGalleryAsync();
+            return View(galleries);
+        }
+
         [HttpGet]
         public IActionResult CreateHighlights() => View();
 
@@ -147,6 +153,43 @@ namespace Umuomaku.Controllers
             return RedirectToAction("CreateEvents");
         }
 
+        [HttpGet]
+        public IActionResult CreateGallery() => View();
+
+        [HttpPost]
+        public async Task<IActionResult> CreateGallery(Gallery model, IFormFile ImageFile)
+        {
+            try
+            {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    string refernce = GetImageReference("GALLERY");
+                    string fileName = refernce + ".png";
+
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    model.ImageUrl = fileName;
+                }
+
+                model.DateCreated = DateTime.Now;
+                model.UserCreated = User.Identity?.Name ?? "System";
+                await _repo.AddGalleryAsync(model);
+
+                TempData["Success"] = "Gallery created successfully.";
+                return RedirectToAction("CreateGallery");
+            }
+            catch (Exception ex)
+            {
+                log.Error("Error with CreateGallery. " + ex);
+            }
+            return RedirectToAction("CreateEvents");
+        }
+
         public string GetImageReference(string idtype)
         {
             string imageId = "";
@@ -183,6 +226,16 @@ namespace Umuomaku.Controllers
                 return NotFound();
             }
             return View(ev);
+        }
+
+        public async Task<IActionResult> UpdateGallery(int id)
+        {
+            var gallery = await _repo.GetGalleryByIdAsync(id);
+            if (gallery == null)
+            {
+                return NotFound();
+            }
+            return View(gallery);
         }
 
         [HttpPost]
@@ -255,6 +308,40 @@ namespace Umuomaku.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> UpdateGallery(Gallery model, IFormFile ImageFile)
+        {
+            try
+            {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    string refernce = GetImageReference("EVENT");
+                    string fileName = refernce + ".png";
+
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    model.ImageUrl = fileName;
+                }
+
+                model.DateUpdated = DateTime.Now;
+                model.UserUpdated = User.Identity?.Name ?? "System";
+
+                await _repo.UpdateGalleryAsync(model);
+
+                TempData["Success"] = "Gallery updated successfully.";
+                return RedirectToAction("UpdateGallery");
+            }
+            catch (Exception ex)
+            {
+                log.Error("Error with UpdateGallery. " + ex);
+            }
+            return View(model);
+        }
 
         public async Task<IActionResult> DeleteHighlight(int id)
         {
@@ -301,6 +388,41 @@ namespace Umuomaku.Controllers
             }
 
             return RedirectToAction("Events");
+        }
+
+        public async Task<IActionResult> DeleteGallery(int id)
+        {
+            var ev = await _repo.GetGalleryByIdAsync(id);
+            if (ev == null)
+            {
+                return NotFound();
+            }
+            return View(ev);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteGalleryById(int id)
+        {
+            try
+            {
+                await _repo.SoftDeleteGalleryAsync(id);
+                TempData["DeleteGalleryResponse"] = "Gallery deleted successfully";
+                return RedirectToAction("Gallery");
+            }
+            catch (Exception ex)
+            {
+                TempData["DeleteGalleryResponse"] = "Something went wrong. Delete Failed";
+                log.Error("Error with DeleteGalleryById. " + ex);
+            }
+
+            return RedirectToAction("Gallery");
+        }
+
+        public async Task<IActionResult> GalleryDetail(int id)
+        {
+            var galleryItem = await _repo.GetGalleryByIdAsync(id);
+            if (galleryItem == null) return NotFound();
+            return View("GalleryDetail", galleryItem);
         }
     }
 }

@@ -3,12 +3,64 @@
   "WorkspaceRootPath": "C:\\c#Projects\\Umuomaku\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\repositories\\adminrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:repositories\\adminrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\admin\\updategallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\admin\\updategallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\data\\models\\gallery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:data\\models\\gallery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\admin\\gallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\admin\\gallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\repositories\\iadminrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:repositories\\iadminrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\admin\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\admin\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\admin\\deleteevent - copy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\admin\\deleteevent - copy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\admin\\creategallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\admin\\creategallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\home\\gallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\home\\gallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\data\\umuomakudbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:data\\umuomakudbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\home\\highlights.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\home\\highlights.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\home\\highlightdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\home\\highlightdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\home\\highlights.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\home\\highlights.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|c:\\c#projects\\umuomaku\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{44887B61-758F-4360-B537-56258616F935}|Umuomaku.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,50 +82,193 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Error.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Error.cshtml",
-              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Error.cshtml",
-              "RelativeToolTip": "Views\\Home\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-27T23:23:57.264Z",
+              "DocumentIndex": 6,
+              "Title": "IAdminRepo.cs",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Repositories\\IAdminRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\IAdminRepo.cs",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Repositories\\IAdminRepo.cs",
+              "RelativeToolTip": "Repositories\\IAdminRepo.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwCAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T18:58:00.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminRepo.cs",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Repositories\\AdminRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\AdminRepo.cs",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Repositories\\AdminRepo.cs*",
+              "RelativeToolTip": "Repositories\\AdminRepo.cs*",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAowF8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T18:55:03.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\c#Projects\\Umuomaku\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAswBUAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T23:03:55.579Z",
+              "Title": "UpdateGallery.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\UpdateGallery.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\UpdateGallery.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\UpdateGallery.cshtml",
+              "RelativeToolTip": "Views\\Admin\\UpdateGallery.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAC8AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T19:42:08.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HighlightDetail.cshtml",
-              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Home\\HighlightDetail.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\HighlightDetail.cshtml",
-              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Home\\HighlightDetail.cshtml",
-              "RelativeToolTip": "Views\\Home\\HighlightDetail.cshtml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "CreateGallery.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\CreateGallery.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\CreateGallery.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\CreateGallery.cshtml",
+              "RelativeToolTip": "Views\\Admin\\CreateGallery.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-27T22:28:22.229Z",
+              "WhenOpened": "2025-07-28T19:34:34.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAACsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T22:24:04.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Gallery.cs",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Data\\Models\\Gallery.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Gallery.cs",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Data\\Models\\Gallery.cs",
+              "RelativeToolTip": "Data\\Models\\Gallery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T18:49:35.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Gallery.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\Gallery.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Gallery.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\Gallery.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Gallery.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T19:37:48.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeleteEvent - Copy.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\DeleteEvent - Copy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DeleteEvent - Copy.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\DeleteEvent - Copy.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DeleteEvent - Copy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T19:47:33.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwEgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T22:21:39.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAcwE0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T19:06:34.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\Home.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Home.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Admin\\Home.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Home.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T19:49:57.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Gallery.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Gallery.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Gallery.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Gallery.cshtml",
+              "RelativeToolTip": "Views\\Home\\Gallery.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T18:52:01.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T18:12:38.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UmuomakuDbContext.cs",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Data\\UmuomakuDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\UmuomakuDbContext.cs",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Data\\UmuomakuDbContext.cs",
+              "RelativeToolTip": "Data\\UmuomakuDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T18:56:53.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Highlights.cshtml",
               "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Highlights.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Highlights.cshtml",
@@ -94,33 +281,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGMAAACOAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "HighlightDetail.cshtml",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Home\\HighlightDetail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\HighlightDetail.cshtml",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Views\\Home\\HighlightDetail.cshtml",
+              "RelativeToolTip": "Views\\Home\\HighlightDetail.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-27T22:24:04.82Z",
+              "WhenOpened": "2025-07-27T22:28:22.229Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\c#Projects\\Umuomaku\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAswF8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\c#Projects\\Umuomaku\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswBUAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T22:21:39.896Z",
+              "WhenOpened": "2025-07-27T23:03:55.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "Events.cshtml",
               "DocumentMoniker": "C:\\c#Projects\\Umuomaku\\Views\\Home\\Events.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Events.cshtml",

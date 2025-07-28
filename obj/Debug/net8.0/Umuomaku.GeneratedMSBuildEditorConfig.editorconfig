@@ -32,8 +32,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlRXZlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/c\#Projects/Umuomaku/Views/Admin/CreateGallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlR2FsbGVyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/c\#Projects/Umuomaku/Views/Admin/CreateHighlights.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlSGlnaGxpZ2h0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/c\#Projects/Umuomaku/Views/Admin/DeleteEvent - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlRXZlbnQgLSBDb3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/c\#Projects/Umuomaku/Views/Admin/DeleteEvent.cshtml]
@@ -46,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/c\#Projects/Umuomaku/Views/Admin/Events.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRXZlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/c\#Projects/Umuomaku/Views/Admin/Gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2FsbGVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/c\#Projects/Umuomaku/Views/Admin/Highlights.cshtml]
@@ -62,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/c\#Projects/Umuomaku/Views/Admin/UpdateEvent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlRXZlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/c\#Projects/Umuomaku/Views/Admin/UpdateGallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlR2FsbGVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/c\#Projects/Umuomaku/Views/Admin/UpdateHighlights.cshtml]

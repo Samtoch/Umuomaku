@@ -67,12 +67,14 @@ namespace Umuomaku.Controllers
             return View();
         }
 
-        public IActionResult Gallery()
+        public async Task<IActionResult> Gallery()
         {
-            return View();
+            
+            var galleryItems = await _repo.GetTopGalleryAsync();
+            return View(galleryItems);
         }
 
-        public IActionResult Contactus()
+        public IActionResult ContactUs()
         {
             return View();
         }

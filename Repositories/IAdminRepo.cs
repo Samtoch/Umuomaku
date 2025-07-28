@@ -7,6 +7,8 @@ namespace Umuomaku.Repositories
     {
         Task<AdminUser> GetUserDetails(string email, string hashedPassword);
         Task UpdateAdminUserAsync(AdminUser user);
+
+
         Task AddHighlightAsync(Highlight highlight);
         Task<List<Highlight>> GetAllHighlightAsync();
         Task<List<Highlight>> GetTopHighlightsAsync(int count);
@@ -22,6 +24,13 @@ namespace Umuomaku.Repositories
         Task<Event?> GetEventByIdAsync(int id);
         Task UpdateEventAsync(Event ev);
         Task SoftDeleteEventAsync(int id);
+
+        Task AddGalleryAsync(Gallery gallery);
+        Task<List<Gallery>> GetAllGalleryAsync();
+        Task<List<Gallery>> GetTopGalleryAsync();
+        Task<Gallery?> GetGalleryByIdAsync(int id);
+        Task UpdateGalleryAsync(Gallery ev);
+        Task SoftDeleteGalleryAsync(int id);
     }
 }
 

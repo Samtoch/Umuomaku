@@ -1,0 +1,130 @@
+﻿@model Umuomaku.Data.Models.Gallery
+
+@{
+    ViewData["Title"] = "Create Gallery";
+}
+
+<div class="container mt-5">
+    <h3 class="text-center mb-4 general-heading">Create Gallery</h3> @* Added general-heading for potential styling *@
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <form id="createGalleryForm" asp-action="CreateGallery" asp-controller="Admin" enctype="multipart/form-data" method="post" onsubmit="return handleFormSubmission()">
+        <div class="mb-3">
+            <label asp-for="LocationOrEvent" class="form-label fw-bold"></label>
+            <input asp-for="LocationOrEvent" class="form-control" />
+            <span asp-validation-for="LocationOrEvent" class="text-danger"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="DateOfEvent" class="form-label fw-bold">Event Date</label> 
+                <input asp-for="DateOfEvent" type="datetime-local" class="form-control" />
+                <span asp-validation-for="DateOfEvent" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label fw-bold">Highlight Image</label>
+                <input type="file" id="ImageFile" name="ImageFile" class="form-control" /> 
+                <span asp-validation-for="ImageUrl" class="text-danger"></span> 
+            </div>
+        </div>
+      
+        <div class="d-flex justify-content-end gap-2 mt-4">
+            <button type="submit" id="submitButton" class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                <span class="button-text">Create Gallery</span>
+            </button>
+            <a asp-action="Gallery" asp-controller="Admin" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+
+<br />
+<br />
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Form validation logic
+        function validateEventForm() {
+            const title = document.getElementById('Title').value.trim();
+            const dateOfEvent = document.getElementById('DateOfEvent').value.trim();
+            const location = document.getElementById('Location').value.trim(); // Assuming Location exists
+            const content = document.getElementById('Content').value.trim();
+            const imageFile = document.getElementById('ImageFile').value; // For file input validation
+
+            // Basic client-side validation
+            if (!title) {
+                alert("Title is required.");
+                return false;
+            }
+            if (!dateOfEvent) {
+                alert("Event Date is required.");
+                return false;
+            }
+            if (!location) {
+                alert("Location is required.");
+                return false;
+            }
+            if (!content) {
+                alert("Content is required.");
+                return false;
+            }
+            if (!imageFile) { // Image is required for creation
+                alert("Highlight Image is required.");
+                return false;
+            }
+
+            return true;
+        }
+
+        // Function to handle form submission, including validation and spinner
+        function handleFormSubmission() {
+            if (validateEventForm()) {
+                const submitButton = document.getElementById('submitButton');
+                const spinner = submitButton.querySelector('.spinner-border');
+                const buttonText = submitButton.querySelector('.button-text');
+
+                // Show spinner, change text, disable button
+                spinner.classList.remove('d-none');
+                buttonText.textContent = 'Creating...';
+                submitButton.disabled = true;
+
+                return true; // Allow form submission to proceed
+            }
+            return false; // Prevent form submission if validation fails
+        }
+
+        // Re-enable button if form returns with errors (server-side validation failed)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for validation summary errors or individual field errors
+            const hasValidationErrors = document.querySelector('.validation-summary-errors') || document.querySelector('.text-danger');
+            
+            // If there are errors or a TempData error message, it means the page reloaded due to an issue
+            // Re-enable the submit button
+            if (hasValidationErrors || document.querySelector('.alert-danger')) {
+                const submitButton = document.getElementById('submitButton');
+                const spinner = submitButton.querySelector('.spinner-border');
+                const buttonText = submitButton.querySelector('.button-text');
+
+                spinner.classList.add('d-none');
+                buttonText.textContent = 'Create Event'; // Reset to original text
+                submitButton.disabled = false;
+            }
+        });
+    </script>
+}

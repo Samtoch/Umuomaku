@@ -25,6 +25,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <style>
+        .custom-outline-umuomaku {
+		    color: #99004a;
+		    border: 1px solid #99004a;
+		    background-color: transparent;
+		    transition: all 0.3s ease;
+	    }
+
+		.custom-outline-umuomaku:hover {
+			background-color: #99004a;
+			color: white;
+		}
         .general-heading {
             position: relative;
             display: inline-block;
@@ -76,7 +87,7 @@
                 <!-- Logo and Toggle Button Row -->
                 <div class="d-flex justify-content-between w-100 align-items-center">
                     <!-- Logo -->
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <a class="navbar-brand"  asp-controller="Home" asp-action="Index">
                         <span class="fw-bold text-uppercase" style="color: #99004a;">UMUOMAKU</span>
                     </a>
 
@@ -91,25 +102,25 @@
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-area="" asp-controller="Home" asp-action="Highlights">Highlights</a>
+                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-controller="Home" asp-action="Highlights">Highlights</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-area="" asp-controller="Home" asp-action="History">History</a>
+                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-controller="Home" asp-action="History">History</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-area="" asp-controller="Home" asp-action="Events">Events</a>
+                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-controller="Home" asp-action="Events">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-area="" asp-controller="Home" asp-action="Gallery">Gallery</a>
+                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-controller="Home" asp-action="Gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact</a>
+                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-controller="Home" asp-action="ContactUs">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-area="" asp-controller="Admin" asp-action="Login"><i class="bi bi-person-fill-gear"></i></a>
+                            <a class="nav-link px-3 fw-semibold text-dark hover-active" asp-controller="Admin" asp-action="Login"><i class="bi bi-person-fill-gear"></i></a>
                         </li>
                     </ul>
                 </div>

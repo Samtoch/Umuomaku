@@ -1,0 +1,27 @@
+﻿@model Umuomaku.Data.Models.Gallery
+
+@{
+    ViewData["Title"] = "Delete Gallery";
+}
+
+<div class="container mt-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-light p-2 ">
+            <li class="breadcrumb-item"> <a asp-controller="Admin" asp-action="Home" class="text-decoration-none"> Dashboard </a> </li>
+            <li class="breadcrumb-item active" aria-current="page"> Delete Gallery </li>
+        </ol>
+    </nav>
+    <form asp-action="DeleteGalleryById" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <img src="~/uploads/@Model.ImageUrl" class="img-thumbnail mb-3" style="width: 60px; height: 60px; object-fit: cover;" alt="Highlight Image">
+        <p><strong>Date of Event:</strong> @Model.DateOfEvent</p>
+        <p><strong>Location:</strong> @Model.LocationOrEvent</p>
+
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Gallery" class="btn btn-secondary ms-2">Cancel</a>
+    </form>
+</div>
+
+<br />
+<br />

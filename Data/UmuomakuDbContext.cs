@@ -8,6 +8,7 @@ namespace Umuomaku.Data
         public UmuomakuDbContext(DbContextOptions<UmuomakuDbContext> options) : base(options) { }
 
         public DbSet<Event> Events { get; set; }
+        public DbSet<Gallery> Galleries { get; set; }
         public DbSet<Highlight> Highlights { get; set; }
         public DbSet<AdminUser> AdminUsers { get; set; }
     }
